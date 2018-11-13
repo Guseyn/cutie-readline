@@ -6,13 +6,13 @@ const readline = require('readline');
 // Represented result is stream
 class StreamWithEmittedKeypressEvents extends AsyncObject {
 
-  constructor(stream, interface) {
-    super(stream, interface);
+  constructor(stream, Interface) {
+    super(stream, Interface);
   }
 
   definedSyncCall() {
-    return (stream, interface) => {
-      readline.emitKeypressEvents(stream, interface);
+    return (stream, Interface) => {
+      readline.emitKeypressEvents(stream, Interface);
       return stream;
     }
   }

@@ -5,19 +5,19 @@ const { AsyncObject } = require('@cuties/cutie');
 // Represented result is interface
 class QuestionedInterface extends AsyncObject {
 
-  constructor(interface, query) {
-    super(interface, query);
+  constructor(Interface, query) {
+    super(Interface, query);
   }
 
   definedAsyncCall() {
-    return (interface, query, callback) => {
-      this.interface = interface;
-      interface.question(query, callback);
+    return (Interface, query, callback) => {
+      this.Interface = Interface;
+      Interface.question(query, callback);
     }
   }
 
   onResult() {
-    return this.interface;
+    return this.Interface;
   }
 
 }
