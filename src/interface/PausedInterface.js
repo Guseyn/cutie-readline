@@ -5,14 +5,14 @@ const { AsyncObject } = require('@cuties/cutie');
 // Represented result is interface
 class PausedInterface extends AsyncObject {
 
-  constructor(interface) {
-    super(interface);
+  constructor(Interface) {
+    super(Interface);
   }
 
   definedSyncCall() {
-    return (interface) => {
-      interface.pause();
-      return interface;
+    return (Interface) => {
+      Interface.pause();
+      return Interface;
     }
   }
 
