@@ -16,6 +16,10 @@ class CreatedInterface extends AsyncObject {
     }
   }
 
+  onResult(Interface) {
+    return Interface;
+  }
+
 }
 
 module.exports = CreatedInterface;

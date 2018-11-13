@@ -2,22 +2,19 @@
 
 const { AsyncObject } = require('@cuties/cutie');
 
-// Represented result is interface
+// Represented result is string
 class QuestionedInterface extends AsyncObject {
 
-  constructor(Interface, query) {
+  constructor(Interface, query, event) {
     super(Interface, query);
   }
 
-  definedAsyncCall() {
-    return (Interface, query, callback) => {
-      this.Interface = Interface;
-      Interface.question(query, callback);
+  // event is one time Event with definedBody(answer)
+  definedSyncCall() {
+    return (Interface, query, event) => {
+      Interface.question(query, event);
+      return Interface;
     }
-  }
-
-  onResult() {
-    return this.Interface;
   }
 
 }
