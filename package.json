@@ -1,0 +1,28 @@
+{
+  "name": "@cuties/readline",
+  "version": "1.0.0",
+  "description": "Cutie extension for readline module in Node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test-executor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guseyn/cutie-readline.git"
+  },
+  "keywords": [
+    "cutie",
+    "readline"
+  ],
+  "author": "guseyn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Guseyn/cutie-readline/issues"
+  },
+  "homepage": "https://github.com/Guseyn/cutie-readline#readme",
+  "dependencies": {
+    "@cuties/assert": "^1.1.5",
+    "@cuties/is": "^1.0.8",
+    "test-executor": "^1.1.2"
+  }
+}
