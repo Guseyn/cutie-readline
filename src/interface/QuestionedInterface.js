@@ -6,7 +6,7 @@ const { AsyncObject } = require('@cuties/cutie');
 class QuestionedInterface extends AsyncObject {
 
   constructor(Interface, query, event) {
-    super(Interface, query);
+    super(Interface, query, event);
   }
 
   // event is one time Event with definedBody(answer)
