@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Guseyn/cutie-readline#readme",
   "dependencies": {
     "@cuties/assert": "^1.1.5",
+    "@cuties/child-process": "^1.0.2",
     "@cuties/is": "^1.0.8",
     "@cuties/process": "^1.1.0",
     "test-executor": "^1.1.2"

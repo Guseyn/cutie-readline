@@ -2,7 +2,7 @@
 
 const { AsyncObject } = require('@cuties/cutie');
 
-// Represented result is string
+// Represented result is interface
 class QuestionedInterface extends AsyncObject {
 
   constructor(Interface, query, event) {
