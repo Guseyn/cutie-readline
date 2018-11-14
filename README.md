@@ -18,7 +18,7 @@ const {
 For more information about parameters in the async objects visit [docs of Node](https://nodejs.org/en/docs/) for <b>readline</b> module.
 
 ## interface
-`
+
 | Async Object | Async/sync call | Parameters(default value/description) | Representation result |
 | ------------- | --------------- | ---------- | --------------------- |
 | `ClosedInterface` | `Interface.close` | `Interface` | `Interface` |
@@ -38,7 +38,7 @@ For more information about parameters in the async objects visit [docs of Node](
 | `WrittenInterface` | `Interface.write` | `Interface, data[, key]` | `Interface` |
 
 ## stream and other structures
-`
+
 | Async Object | Async/sync call | Parameters(default value/description) | Representation result |
 | ------------ | -------------- | ---------- | --------------------- |
 | `AnswersOfQuestionedInterface` | `Interface.question` | `Interface, query[, previousAnswers(is AnswersOfQuestionedInterface or string[])]` | `string[]` |
