@@ -23,17 +23,17 @@ For more information about parameters in the async objects visit [docs of Node](
 | ------------- | --------------- | ---------- | --------------------- |
 | `ClosedInterface` | `Interface.close` | `Interface` | `Interface` |
 | `CreatedInterface` | `readline.createInterface` | `Interface, options` | `Interface` |
-| `InterfaceWithCloseEvent` | `Interface.on('close', event)` | `Interface, event (Event with definedBody())` | `Interface` |
-| `InterfaceWithLineEvent` | `Interface.on('line', event)` | `Interface, event (Event with definedBody(input))` | `Interface` |
-| `InterfaceWithPauseEvent` | `Interface.on('pause', event)` | `Interface, event (Event with definedBody())` | `Interface` |
+| `InterfaceWithCloseEvent` | `Interface.on('close', event)` | `Interface, event(Event with definedBody())` | `Interface` |
+| `InterfaceWithLineEvent` | `Interface.on('line', event)` | `Interface, event(Event with definedBody(input))` | `Interface` |
+| `InterfaceWithPauseEvent` | `Interface.on('pause', event)` | `Interface, event(Event with definedBody())` | `Interface` |
 | `InterfaceWithPrompt` | `Interface.setPrompt` | `prompt` | `Interface` |
-| `InterfaceWithResumeEvent` | `Interface.on('resume', event)` | `Interface, event (Event with definedBody())` | `Interface` |
-| `InterfaceWithSIGCONTEvent` | `Interface.on('SIGCONT', event)` | `Interface, event (Event with definedBody())` | `Interface` |
-| `InterfaceWithSIGINTEvent` | `Interface.on('SIGINT', event)` | `Interface, event (Event with definedBody())` | `Interface` |
-| `InterfaceWithSIGTSTPEvent` | `Interface.on('SIGTSTP', event)` | `Interface, event (Event with definedBody())` | `Interface` |
+| `InterfaceWithResumeEvent` | `Interface.on('resume', event)` | `Interface, event(Event with definedBody())` | `Interface` |
+| `InterfaceWithSIGCONTEvent` | `Interface.on('SIGCONT', event)` | `Interface, event(Event with definedBody())` | `Interface` |
+| `InterfaceWithSIGINTEvent` | `Interface.on('SIGINT', event)` | `Interface, event(Event with definedBody())` | `Interface` |
+| `InterfaceWithSIGTSTPEvent` | `Interface.on('SIGTSTP', event)` | `Interface, event(Event with definedBody())` | `Interface` |
 | `PausedInterface` | `Interface.pause` | `Interface` | `Interface` |
 | `PromptedInterface` | `Interface.prompt` | `Interface[, preserveCursor]` | `Interface` |
-| `QuestionedInterface` | `Interface.question` | `Interface, query` | `Interface` |
+| `QuestionedInterface` | `Interface.question` | `Interface, query, event(Event with definedBody(answer))` | `Interface` |
 | `ResumedInterface` | `Interface.resume` | `Interface` | `Interface` |
 | `WrittenInterface` | `Interface.write` | `Interface, data[, key]` | `Interface` |
 
