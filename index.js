@@ -17,6 +17,7 @@ module.exports = {
   ResumedInterface: require('./src/interface/ResumedInterface'),
   WrittenInterface: require('./src/interface/WrittenInterface'),
 
+  AnswersOfQuestionedInterface: require('./src/AnswersOfQuestionedInterface'),
   StreamWithClearedLine: require('./src/StreamWithClearedLine'),
   StreamWithClearedScreenDown: require('./src/StreamWithClearedScreenDown'),
   StreamWithCursorTo: require('./src/StreamWithCursorTo'),
