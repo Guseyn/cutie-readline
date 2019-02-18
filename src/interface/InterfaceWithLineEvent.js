@@ -1,22 +1,20 @@
 'use strict'
 
-const { AsyncObject } = require('@cuties/cutie');
+const { AsyncObject } = require('@cuties/cutie')
 
 // Represented result is interface
 class InterfaceWithLineEvent extends AsyncObject {
-
-  constructor(Interface, event) {
-    super(Interface, event);
+  constructor (Interface, event) {
+    super(Interface, event)
   }
 
   // event is an Event with definedBody(input)
-  definedSyncCall() {
+  definedSyncCall () {
     return (Interface, event) => {
-      Interface.on('line', event);
-      return Interface;
+      Interface.on('line', event)
+      return Interface
     }
   }
-
 }
 
-module.exports = InterfaceWithLineEvent;
+module.exports = InterfaceWithLineEvent

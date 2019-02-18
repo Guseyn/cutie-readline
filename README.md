@@ -1,14 +1,28 @@
 # cutie-readline
 
-[![NPM Version][npm-image]][npm-url]
+[![NPM Version](https://img.shields.io/npm/v/@cuties/readline.svg)](https://npmjs.org/package/@cuties/readline)
+[![Build Status](https://travis-ci.org/Guseyn/cutie-readline.svg?branch=master)](https://travis-ci.org/Guseyn/cutie-readline)
+[![codecov](https://codecov.io/gh/Guseyn/cutie-readline/branch/master/graph/badge.svg)](https://codecov.io/gh/Guseyn/cutie-readline)
 
 [Cutie](https://github.com/Guseyn/cutie-readline) extension for <b>readline</b> module in Node. It's based on the [Async Tree Pattern](https://github.com/Guseyn/async-tree-patern/blob/master/Async_Tree_Patern.pdf).
 
-# Examples
+## Examples
 
 You can find examples of using this library in the [test directory](https://github.com/Guseyn/cutie-readline/tree/master/test).
 
-# Usage
+## Install
+
+`npm install @cuties/cluster`
+
+## Run test
+
+`npm test`
+
+## Run build
+
+`npm run build`
+
+## Usage
 
 ```js
 const {
@@ -47,6 +61,3 @@ For more information about parameters in the async objects visit [docs of Node](
 | `StreamWithCursorTo` | `readline.streamWithCursorTo` | `stream, x, y` | `stream` |
 | `StreamWithEmittedKeypressEvents` | `readline.emitKeypressEvents` | `stream[, interface]` | `stream` |
 | `StreamWithMovedCursor` | `readline.moveCursor` | `stream, dx, dy` | `stream` |
-
-[npm-image]: https://img.shields.io/npm/v/@cuties/readline.svg
-[npm-url]: https://npmjs.org/package/@cuties/readline

@@ -1,21 +1,19 @@
 'use strict'
 
-const { AsyncObject } = require('@cuties/cutie');
+const { AsyncObject } = require('@cuties/cutie')
 
 // Represented result is interface
 class PromptedInterface extends AsyncObject {
-
-  constructor(Interface, preserveCursor) {
-    super(Interface, preserveCursor);
+  constructor (Interface, preserveCursor) {
+    super(Interface, preserveCursor)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (Interface, preserveCursor) => {
-      Interface.prompt(preserveCursor);
-      return Interface;
+      Interface.prompt(preserveCursor)
+      return Interface
     }
   }
-
 }
 
-module.exports = PromptedInterface;
+module.exports = PromptedInterface

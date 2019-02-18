@@ -1,22 +1,20 @@
 'use strict'
 
-const { AsyncObject } = require('@cuties/cutie');
-const readline = require('readline');
+const { AsyncObject } = require('@cuties/cutie')
+const readline = require('readline')
 
 // Represented result is stream
 class StreamWithClearedScreenDown extends AsyncObject {
-
-  constructor(stream) {
-    super(stream);
+  constructor (stream) {
+    super(stream)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (stream, dir) => {
-      readline.clearScreenDown(stream);
-      return stream;
+      readline.clearScreenDown(stream)
+      return stream
     }
   }
-
 }
 
-module.exports = StreamWithClearedScreenDown;
+module.exports = StreamWithClearedScreenDown

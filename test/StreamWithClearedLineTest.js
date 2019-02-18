@@ -1,9 +1,9 @@
 'use strict'
 
-const { Assertion } = require('@cuties/assert');
-const { Is } = require('@cuties/is');
-const Stream = require('stream');
-const { StreamWithClearedLine } = require('./../index');
+const { Assertion } = require('@cuties/assert')
+const { Is } = require('@cuties/is')
+const Stream = require('stream')
+const { StreamWithClearedLine } = require('./../index')
 
 new Assertion(
   new Is(
@@ -12,4 +12,4 @@ new Assertion(
       0
     ), Stream
   )
-).call();
+).call()

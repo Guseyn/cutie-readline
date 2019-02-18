@@ -1,21 +1,19 @@
 'use strict'
 
-const { AsyncObject } = require('@cuties/cutie');
+const { AsyncObject } = require('@cuties/cutie')
 
 // Represented result is interface
 class WrittenInterface extends AsyncObject {
-
-  constructor(Interface, data, key) {
-    super(Interface, data, key);
+  constructor (Interface, data, key) {
+    super(Interface, data, key)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (Interface, data, key) => {
-      Interface.write(data, key);
-      return Interface;
+      Interface.write(data, key)
+      return Interface
     }
   }
-
 }
 
-module.exports = WrittenInterface;
+module.exports = WrittenInterface
