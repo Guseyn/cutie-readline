@@ -1,11 +1,11 @@
 'use strict'
 
-const { as } = require('@cuties/cutie');
-const { Assertion } = require('@cuties/assert');
-const { Is } = require('@cuties/is');
-const { ExitedProcess } = require('@cuties/process');
-const { CreatedInterface, ClosedInterface, StreamWithEmittedKeypressEvents } = require('./../index');
-const Stream = require('stream');
+const { as } = require('@cuties/cutie')
+const { Assertion } = require('@cuties/assert')
+const { Is } = require('@cuties/is')
+const { ExitedProcess } = require('@cuties/process')
+const { CreatedInterface, ClosedInterface, StreamWithEmittedKeypressEvents } = require('./../index')
+const Stream = require('stream')
 
 new Assertion(
   new Is(
@@ -21,4 +21,4 @@ new Assertion(
   new ClosedInterface(as('interface')).after(
     new ExitedProcess(process, 0)
   )
-).call();
+).call()

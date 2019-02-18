@@ -1,25 +1,23 @@
 'use strict'
 
-const { AsyncObject } = require('@cuties/cutie');
-const readline = require('readline');
+const { AsyncObject } = require('@cuties/cutie')
+const readline = require('readline')
 
 // Represented result is interface
 class CreatedInterface extends AsyncObject {
-
-  constructor(options) {
-    super(options);
+  constructor (options) {
+    super(options)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (options) => {
-      return readline.createInterface(options);
+      return readline.createInterface(options)
     }
   }
 
-  onResult(Interface) {
-    return Interface;
+  onResult (Interface) {
+    return Interface
   }
-
 }
 
-module.exports = CreatedInterface;
+module.exports = CreatedInterface

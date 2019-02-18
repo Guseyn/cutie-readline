@@ -1,22 +1,20 @@
 'use strict'
 
-const { AsyncObject } = require('@cuties/cutie');
+const { AsyncObject } = require('@cuties/cutie')
 
 // Represented result is interface
 class InterfaceWithCloseEvent extends AsyncObject {
-
-  constructor(Interface, event) {
-    super(Interface, event);
+  constructor (Interface, event) {
+    super(Interface, event)
   }
 
   // event is an Event with definedBody()
-  definedSyncCall() {
+  definedSyncCall () {
     return (Interface, event) => {
-      Interface.on('close', event);
-      return Interface;
+      Interface.on('close', event)
+      return Interface
     }
   }
-
 }
 
-module.exports = InterfaceWithCloseEvent;
+module.exports = InterfaceWithCloseEvent

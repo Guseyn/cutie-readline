@@ -1,10 +1,10 @@
 'use strict'
 
-const { Assertion } = require('@cuties/assert');
-const { Is } = require('@cuties/is');
-const { ExitedProcess } = require('@cuties/process');
-const { CreatedInterface, ClosedInterface } = require('./../../index');
-const Interface = require('readline').Interface;
+const { Assertion } = require('@cuties/assert')
+const { Is } = require('@cuties/is')
+const { ExitedProcess } = require('@cuties/process')
+const { CreatedInterface, ClosedInterface } = require('./../../index')
+const Interface = require('readline').Interface
 
 new Assertion(
   new Is(
@@ -17,4 +17,4 @@ new Assertion(
   )
 ).after(
   new ExitedProcess(process, 0)
-).call();
+).call()

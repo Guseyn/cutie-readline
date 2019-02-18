@@ -1,21 +1,19 @@
 'use strict'
 
-const { AsyncObject } = require('@cuties/cutie');
+const { AsyncObject } = require('@cuties/cutie')
 
 // Represented result is interface
 class PausedInterface extends AsyncObject {
-
-  constructor(Interface) {
-    super(Interface);
+  constructor (Interface) {
+    super(Interface)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (Interface) => {
-      Interface.pause();
-      return Interface;
+      Interface.pause()
+      return Interface
     }
   }
-
 }
 
-module.exports = PausedInterface;
+module.exports = PausedInterface

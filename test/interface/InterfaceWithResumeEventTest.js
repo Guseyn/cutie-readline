@@ -1,20 +1,18 @@
 'use strict'
 
-const { as, Event } = require('@cuties/cutie');
-const { Assertion } = require('@cuties/assert');
-const { Is } = require('@cuties/is');
-const { ExitedProcess } = require('@cuties/process');
-const { CreatedInterface, ClosedInterface, InterfaceWithResumeEvent } = require('./../../index');
-const Interface = require('readline').Interface;
+const { as, Event } = require('@cuties/cutie')
+const { Assertion } = require('@cuties/assert')
+const { Is } = require('@cuties/is')
+const { ExitedProcess } = require('@cuties/process')
+const { CreatedInterface, ClosedInterface, InterfaceWithResumeEvent } = require('./../../index')
+const Interface = require('readline').Interface
 
 class ResumeEvent extends Event {
-
-  constructor() {
-    super();
+  constructor () {
+    super()
   }
 
-  definedBody() {}
-
+  definedBody () {}
 }
 
 new Assertion(
@@ -30,4 +28,4 @@ new Assertion(
   new ClosedInterface(as('interface')).after(
     new ExitedProcess(process, 0)
   )
-).call();
+).call()
