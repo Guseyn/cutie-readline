@@ -8,8 +8,8 @@ class InterfaceWithLineEvent extends AsyncObject {
     super(Interface, event)
   }
 
-  // event is an Event with definedBody(input)
-  definedSyncCall () {
+  // event is an Event with body(input)
+  syncCall () {
     return (Interface, event) => {
       Interface.on('line', event)
       return Interface

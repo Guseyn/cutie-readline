@@ -8,7 +8,7 @@ class InterfaceWithPrompt extends AsyncObject {
     super(Interface, prompt)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (Interface, prompt) => {
       Interface.setPrompt(prompt)
       return Interface

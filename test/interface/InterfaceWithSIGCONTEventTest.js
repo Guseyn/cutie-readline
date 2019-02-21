@@ -12,7 +12,7 @@ class SIGCONTEvent extends Event {
     super()
   }
 
-  definedBody () {}
+  body () {}
 }
 
 new Assertion(

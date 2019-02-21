@@ -9,7 +9,7 @@ class CreatedInterface extends AsyncObject {
     super(options)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (options) => {
       return readline.createInterface(options)
     }

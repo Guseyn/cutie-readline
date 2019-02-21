@@ -8,7 +8,7 @@ class WrittenInterface extends AsyncObject {
     super(Interface, data, key)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (Interface, data, key) => {
       Interface.write(data, key)
       return Interface

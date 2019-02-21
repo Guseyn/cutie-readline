@@ -12,7 +12,7 @@ class LineEvent extends Event {
     super()
   }
 
-  definedBody (input) {}
+  body (input) {}
 }
 
 new Assertion(

@@ -8,7 +8,7 @@ class PausedInterface extends AsyncObject {
     super(Interface)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (Interface) => {
       Interface.pause()
       return Interface

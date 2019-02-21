@@ -8,7 +8,7 @@ class AnswersOfQuestionedInterface extends AsyncObject {
     super(Interface, query, previousAnswers || [])
   }
 
-  definedAsyncCall () {
+  asyncCall () {
     return (Interface, query, previousAnswers, callback) => {
       this.answers = previousAnswers
       Interface.question(query, callback)

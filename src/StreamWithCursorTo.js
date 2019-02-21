@@ -9,7 +9,7 @@ class StreamWithCursorTo extends AsyncObject {
     super(stream, x, y)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream, x, y) => {
       readline.cursorTo(stream, x, y)
       return stream

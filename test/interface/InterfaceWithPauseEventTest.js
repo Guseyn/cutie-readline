@@ -12,7 +12,7 @@ class PauseEvent extends Event {
     super()
   }
 
-  definedBody () {}
+  body () {}
 }
 
 new Assertion(
