@@ -8,8 +8,8 @@ class InterfaceWithSIGINTEvent extends AsyncObject {
     super(Interface, event)
   }
 
-  // event is an Event with definedBody()
-  definedSyncCall () {
+  // event is an Event with body()
+  syncCall () {
     return (Interface, event) => {
       Interface.on('SIGINT', event)
       return Interface

@@ -8,7 +8,7 @@ class ClosedInterface extends AsyncObject {
     super(Interface)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (Interface) => {
       Interface.close()
       return Interface

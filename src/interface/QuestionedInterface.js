@@ -8,8 +8,8 @@ class QuestionedInterface extends AsyncObject {
     super(Interface, query, event)
   }
 
-  // event is one time Event with definedBody(answer)
-  definedSyncCall () {
+  // event is one time Event with body(answer)
+  syncCall () {
     return (Interface, query, event) => {
       Interface.question(query, event)
       return Interface

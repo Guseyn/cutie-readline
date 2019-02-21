@@ -22,13 +22,13 @@
   },
   "homepage": "https://github.com/Guseyn/cutie-readline#readme",
   "dependencies": {
-    "@cuties/assert": "^1.1.11",
-    "@cuties/child-process": "^1.0.5",
-    "@cuties/cutie": "^1.6.8",
-    "@cuties/is": "^1.0.14",
-    "@cuties/process": "^1.1.4",
-    "@cuties/wall": "^1.0.19",
-    "test-executor": "^1.1.34"
+    "@cuties/assert": "^1.2.0",
+    "@cuties/child-process": "^1.1.0",
+    "@cuties/cutie": "^1.7.0",
+    "@cuties/is": "^1.1.0",
+    "@cuties/process": "^1.2.0",
+    "@cuties/wall": "^1.1.0",
+    "test-executor": "^1.2.0"
   },
   "devDependencies": {
     "eslint": "^5.14.0",

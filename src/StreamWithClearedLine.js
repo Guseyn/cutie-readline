@@ -9,7 +9,7 @@ class StreamWithClearedLine extends AsyncObject {
     super(stream, dir)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream, dir) => {
       readline.clearLine(stream, dir)
       return stream

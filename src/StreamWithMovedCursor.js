@@ -9,7 +9,7 @@ class StreamWithMovedCursor extends AsyncObject {
     super(stream, dx, dy)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream, dx, dy) => {
       readline.moveCursor(stream, dx, dy)
       return stream

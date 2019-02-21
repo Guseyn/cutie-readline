@@ -12,7 +12,7 @@ class AnswerEvent extends Event {
     super()
   }
 
-  definedBody (answer) {}
+  body (answer) {}
 }
 
 new Assertion(

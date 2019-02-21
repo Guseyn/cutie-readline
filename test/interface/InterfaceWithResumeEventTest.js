@@ -12,7 +12,7 @@ class ResumeEvent extends Event {
     super()
   }
 
-  definedBody () {}
+  body () {}
 }
 
 new Assertion(

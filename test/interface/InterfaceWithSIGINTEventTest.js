@@ -12,7 +12,7 @@ class SIGINTEvent extends Event {
     super()
   }
 
-  definedBody () {}
+  body () {}
 }
 
 new Assertion(

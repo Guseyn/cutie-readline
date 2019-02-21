@@ -8,7 +8,7 @@ class PromptedInterface extends AsyncObject {
     super(Interface, preserveCursor)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (Interface, preserveCursor) => {
       Interface.prompt(preserveCursor)
       return Interface

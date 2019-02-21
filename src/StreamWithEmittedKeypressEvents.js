@@ -9,7 +9,7 @@ class StreamWithEmittedKeypressEvents extends AsyncObject {
     super(stream, Interface)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream, Interface) => {
       readline.emitKeypressEvents(stream, Interface)
       return stream

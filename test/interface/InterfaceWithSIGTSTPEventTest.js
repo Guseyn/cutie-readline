@@ -12,7 +12,7 @@ class SIGTSTPEvent extends Event {
     super()
   }
 
-  definedBody () {}
+  body () {}
 }
 
 new Assertion(

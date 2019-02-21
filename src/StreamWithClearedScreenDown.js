@@ -9,7 +9,7 @@ class StreamWithClearedScreenDown extends AsyncObject {
     super(stream)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (stream, dir) => {
       readline.clearScreenDown(stream)
       return stream

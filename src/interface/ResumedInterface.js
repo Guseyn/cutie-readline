@@ -8,7 +8,7 @@ class ResumedInterface extends AsyncObject {
     super(Interface)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (Interface) => {
       Interface.resume()
       return Interface
