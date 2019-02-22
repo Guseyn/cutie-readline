@@ -27,7 +27,7 @@ deploy:
     tag_name: $TAG
     body: $BODY
     on:
-      repo: Guseyn/cutie-cluster
+      repo: Guseyn/cutie-readline
       branch:
         - master
       condition: $TRAVIS_COMMIT_MESSAGE =~ ^([0-9]{1,3}).([0-9]{1,3}).([0-9]{1,3})$
@@ -36,7 +36,7 @@ deploy:
     api_key:
       secure: U+7Vb3JgewqKx79BaqH6UujWnQwKE36JDDN0LMQ7q8g24YW3MAhH5JeabxXBJvjoWKgLkym6qhV4rOdfGWXAv4YPOV8QyfNUkxtC5exnxYuFCzYbvy01m5juaY/GCD7s226ADqkhRULDY4eb+7xZErIc73Efjv4lPCjWikGK++QbdEsHiQyp5jLfhReSb9aKto4HHOVHdJQJIjqEGxH37EwiO5IUlo8/TmChFa0i3l53PhLaaNtgdcAF6WPm9dJNFOkuyyHmotOcnQLrE57/O1hV+FckprxqVd7u0YSbkSbAJBnvoxPzAhZnxChOny4Z4Iy8GvD1EhdNYPwhusSzeopkLvpkkZC7Ltj4/+tkx2N24HYAuqKhlJDOzvkweezM+jvbPCZNIADc5LVcv1mm29gcI5lnk5AGrczMn8SGXMmnd2Sk07w9L11V7v3K7gAjHLKBsRJ+kTqJNIccPhZ1shC70fRMMGX+VqzmTfdDVGqz0Dp2feDxVfGXhS3jZUsNs5nMc5SYqhuIEegBiRaM6bVHWGRXpAJtjpcOkGjbZr+om0QoVIQa+STTXnImcTt9ra/pAydTNA2cWLOukQ506diuLiNb5pUixJghKRgEbFYoLqyTT59+b7RjtFMTsfS+pjzvityhbanG1M5Jfdq+RjmCBbfKMjAau+Sb31qYlDo=
     on:
-      repo: Guseyn/cutie-cluster
+      repo: Guseyn/cutie-readline
       branch:
         - master
       condition: $TRAVIS_COMMIT_MESSAGE =~ ^([0-9]{1,3}).([0-9]{1,3}).([0-9]{1,3})$
